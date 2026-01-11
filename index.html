@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WordPress副業案件向けポートフォリオ - 高品質なWordPressサイトを制作します">
+    <title>Developer Portfolio - WordPress Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip-link screen-reader-text" href="#main-content">Skip to content</a>
+
+<header class="site-header" id="site-header">
+    <div class="site-header__inner">
+        <div class="site-branding">
+            <a href="/" class="site-logo">Developer Portfolio</a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" role="navigation" aria-label="Primary Menu">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#hero" class="main-nav__link main-nav__link--active">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#services" class="main-nav__link">Services</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#portfolio" class="main-nav__link">Portfolio</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#pricing" class="main-nav__link">Pricing</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#contact" class="main-nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content" class="site-main">
+
+<!-- =====================================================
+     1. Hero Section - フルスクリーンヒーロー
+     ===================================================== -->
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="hero__content animate-fade-in-up">
+            <h1 class="hero__title">WordPress Developer</h1>
+            <p class="hero__text">高品質なWordPressサイトを制作します</p>
+            <div class="hero__buttons">
+                <a href="#portfolio" class="btn btn--primary btn--large">View Portfolio</a>
+                <a href="#contact" class="btn btn--secondary btn--large">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     2. Services Section - 3カラム特徴カード
+     ===================================================== -->
+<section class="section" id="services">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Services</h2>
+            <p class="section__subtitle">提供できるサービス</p>
+        </header>
+
+        <div class="grid grid--3">
+            <div class="card feature-card">
+                <div class="feature-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3 class="feature-card__title">WordPress Theme</h3>
+                <p class="feature-card__text">オリジナルテーマの開発から既存テーマのカスタマイズまで対応。レスポンシブデザインで全デバイスに対応します。</p>
+            </div>
+
+            <div class="card feature-card">
+                <div class="feature-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3 class="feature-card__title">LP Design</h3>
+                <p class="feature-card__text">コンバージョン率を意識したランディングページを制作。魅力的なデザインで成果につなげます。</p>
+            </div>
+
+            <div class="card feature-card">
+                <div class="feature-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                </div>
+                <h3 class="feature-card__title">Site Maintenance</h3>
+                <p class="feature-card__text">WordPressの保守・運用をサポート。セキュリティ対策やバックアップ、更新作業をお任せください。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     3. Skills Section - 2カラム + スキルバー
+     ===================================================== -->
+<section class="section section--gray" id="skills">
+    <div class="container">
+        <div class="two-col">
+            <div class="two-col__content">
+                <h2 class="section__title">Skills</h2>
+                <p class="mb-xl">WordPress開発に必要なスキルセットを幅広く習得しています。フロントエンドからバックエンドまで、高品質なサイト制作が可能です。</p>
+
+                <div class="skill-bar">
+                    <div class="skill-bar__header">
+                        <span class="skill-bar__name">WordPress / PHP</span>
+                        <span class="skill-bar__value">90%</span>
+                    </div>
+                    <div class="skill-bar__track">
+                        <div class="skill-bar__fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-bar__header">
+                        <span class="skill-bar__name">HTML / CSS / Sass</span>
+                        <span class="skill-bar__value">95%</span>
+                    </div>
+                    <div class="skill-bar__track">
+                        <div class="skill-bar__fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-bar__header">
+                        <span class="skill-bar__name">JavaScript / jQuery</span>
+                        <span class="skill-bar__value">85%</span>
+                    </div>
+                    <div class="skill-bar__track">
+                        <div class="skill-bar__fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="skill-bar__header">
+                        <span class="skill-bar__name">UI/UX Design</span>
+                        <span class="skill-bar__value">80%</span>
+                    </div>
+                    <div class="skill-bar__track">
+                        <div class="skill-bar__fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-col__image">
+                <img src="assets/images/skills-illustration.svg" alt="Skills Illustration">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     4. Portfolio Section - グリッドカードレイアウト
+     ===================================================== -->
+<section class="section" id="portfolio">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Portfolio</h2>
+            <p class="section__subtitle">制作実績</p>
+        </header>
+
+        <div class="grid grid--3">
+            <article class="card">
+                <div class="card__image">
+                    <div style="background: linear-gradient(135deg, hsl(40, 70%, 60%), hsl(70, 70%, 50%)); aspect-ratio: 16/10;"></div>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Corporate Site</h3>
+                    <p class="card__text">企業サイトのリニューアル。モダンなデザインとSEO最適化で集客力アップ。</p>
+                    <div class="card__tags">
+                        <span class="tag tag--primary">WordPress</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image">
+                    <div style="background: linear-gradient(135deg, hsl(80, 70%, 60%), hsl(110, 70%, 50%)); aspect-ratio: 16/10;"></div>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">EC Site</h3>
+                    <p class="card__text">WooCommerceを使用したECサイト構築。決済システム連携も対応。</p>
+                    <div class="card__tags">
+                        <span class="tag tag--primary">WooCommerce</span>
+                        <span class="tag">EC</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image">
+                    <div style="background: linear-gradient(135deg, hsl(120, 70%, 60%), hsl(150, 70%, 50%)); aspect-ratio: 16/10;"></div>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Blog Site</h3>
+                    <p class="card__text">SEOに強いブログサイト。カスタム投稿タイプで記事管理を効率化。</p>
+                    <div class="card__tags">
+                        <span class="tag tag--primary">WordPress</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image">
+                    <div style="background: linear-gradient(135deg, hsl(160, 70%, 60%), hsl(190, 70%, 50%)); aspect-ratio: 16/10;"></div>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Landing Page</h3>
+                    <p class="card__text">コンバージョン重視のLP制作。A/Bテストで成果を最大化。</p>
+                    <div class="card__tags">
+                        <span class="tag tag--primary">LP</span>
+                        <span class="tag">CRO</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image">
+                    <div style="background: linear-gradient(135deg, hsl(200, 70%, 60%), hsl(230, 70%, 50%)); aspect-ratio: 16/10;"></div>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Portfolio Site</h3>
+                    <p class="card__text">クリエイター向けポートフォリオサイト。作品を魅力的に見せるデザイン。</p>
+                    <div class="card__tags">
+                        <span class="tag tag--primary">WordPress</span>
+                        <span class="tag">Portfolio</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__image">
+                    <div style="background: linear-gradient(135deg, hsl(240, 70%, 60%), hsl(270, 70%, 50%)); aspect-ratio: 16/10;"></div>
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Membership Site</h3>
+                    <p class="card__text">会員制サイトの構築。ログイン機能とコンテンツ制限を実装。</p>
+                    <div class="card__tags">
+                        <span class="tag tag--primary">WordPress</span>
+                        <span class="tag">Membership</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="text-center mt-2xl">
+            <a href="#contact" class="btn btn--secondary">View All Works</a>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     5. Stats Section - 数字で見る実績
+     ===================================================== -->
+<section class="section section--dark">
+    <div class="container">
+        <div class="grid grid--4">
+            <div class="stat">
+                <div class="stat__number">50+</div>
+                <div class="stat__label">Projects</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number">30+</div>
+                <div class="stat__label">Clients</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number">5+</div>
+                <div class="stat__label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number">100%</div>
+                <div class="stat__label">Satisfaction</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     6. Pricing Section - 料金表
+     ===================================================== -->
+<section class="section section--gray" id="pricing">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Pricing</h2>
+            <p class="section__subtitle">料金プラン</p>
+        </header>
+
+        <div class="grid grid--3">
+            <div class="pricing-card">
+                <h3 class="pricing-card__title">Light</h3>
+                <div class="pricing-card__price">
+                    ¥50,000<span>〜</span>
+                </div>
+                <ul class="pricing-card__features">
+                    <li>既存テーマカスタマイズ</li>
+                    <li>5ページまで</li>
+                    <li>レスポンシブ対応</li>
+                    <li>お問い合わせフォーム</li>
+                    <li>納期: 2週間〜</li>
+                </ul>
+                <a href="#contact" class="btn btn--secondary btn--full">Get Started</a>
+            </div>
+
+            <div class="pricing-card pricing-card--featured">
+                <span class="pricing-card__badge">Popular</span>
+                <h3 class="pricing-card__title">Standard</h3>
+                <div class="pricing-card__price">
+                    ¥150,000<span>〜</span>
+                </div>
+                <ul class="pricing-card__features">
+                    <li>オリジナルデザイン</li>
+                    <li>10ページまで</li>
+                    <li>レスポンシブ対応</li>
+                    <li>SEO基本設定</li>
+                    <li>ブログ機能</li>
+                    <li>納期: 1ヶ月〜</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary btn--full">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="pricing-card__title">Premium</h3>
+                <div class="pricing-card__price">
+                    ¥300,000<span>〜</span>
+                </div>
+                <ul class="pricing-card__features">
+                    <li>フルオーダーメイド</li>
+                    <li>ページ数無制限</li>
+                    <li>カスタム機能開発</li>
+                    <li>EC機能対応可</li>
+                    <li>保守サポート付き</li>
+                    <li>納期: 要相談</li>
+                </ul>
+                <a href="#contact" class="btn btn--secondary btn--full">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     7. Testimonials Section - お客様の声
+     ===================================================== -->
+<section class="section" id="testimonials">
+    <div class="container">
+        <header class="section__header">
+            <h2 class="section__title">Testimonials</h2>
+            <p class="section__subtitle">お客様の声</p>
+        </header>
+
+        <div class="grid grid--2">
+            <div class="testimonial">
+                <p class="testimonial__text">丁寧なヒアリングと迅速な対応で、イメージ通りのサイトが完成しました。WordPressの操作方法も分かりやすく教えていただき、とても満足しています。</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar" style="background: linear-gradient(135deg, #667eea, #764ba2); width: 56px; height: 56px; border-radius: 50%;"></div>
+                    <div>
+                        <div class="testimonial__name">田中 太郎</div>
+                        <div class="testimonial__role">株式会社ABC 代表取締役</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial__text">SEOを意識した設計で、公開後すぐに検索順位が上がりました。デザインセンスも素晴らしく、ブランドイメージにぴったりのサイトになりました。</p>
+                <div class="testimonial__author">
+                    <div class="testimonial__avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c); width: 56px; height: 56px; border-radius: 50%;"></div>
+                    <div>
+                        <div class="testimonial__name">佐藤 花子</div>
+                        <div class="testimonial__role">フリーランスデザイナー</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     8. FAQ Section - アコーディオン
+     ===================================================== -->
+<section class="section section--gray" id="faq">
+    <div class="container container--narrow">
+        <header class="section__header">
+            <h2 class="section__title">FAQ</h2>
+            <p class="section__subtitle">よくあるご質問</p>
+        </header>
+
+        <div class="accordion">
+            <div class="accordion__item accordion__item--open">
+                <button class="accordion__header">
+                    制作期間はどのくらいですか？
+                    <span class="accordion__icon">▼</span>
+                </button>
+                <div class="accordion__content">
+                    <p>規模にもよりますが、シンプルなサイトで2週間程度、中規模サイトで1ヶ月程度、大規模サイトで2ヶ月以上を目安としています。詳細はヒアリング後にお見積りいたします。</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__header">
+                    支払い方法は？
+                    <span class="accordion__icon">▼</span>
+                </button>
+                <div class="accordion__content">
+                    <p>銀行振込またはクレジットカード（PayPal）でのお支払いに対応しています。着手金として50%、納品時に残り50%をお支払いいただくのが標準です。</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__header">
+                    修正回数に制限はありますか？
+                    <span class="accordion__icon">▼</span>
+                </button>
+                <div class="accordion__content">
+                    <p>デザイン確定前の修正は3回まで無料で対応しています。コーディング後の修正は内容により別途費用が発生する場合がございます。</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__header">
+                    サーバーやドメインの用意は必要ですか？
+                    <span class="accordion__icon">▼</span>
+                </button>
+                <div class="accordion__content">
+                    <p>ご用意いただくことも、こちらで代行取得することも可能です。おすすめのサーバー・ドメインのご提案もいたしますので、お気軽にご相談ください。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================================================
+     9. CTA Section - コールトゥアクション
+     ===================================================== -->
+<section class="cta">
+    <div class="container">
+        <h2 class="cta__title">Ready to Start Your Project?</h2>
+        <p class="cta__text">お気軽にご相談ください。無料でお見積りいたします。</p>
+        <a href="#contact" class="btn btn--white btn--large">Contact Now</a>
+    </div>
+</section>
+
+<!-- =====================================================
+     10. Contact Section - お問い合わせフォーム
+     ===================================================== -->
+<section class="section" id="contact">
+    <div class="container container--narrow">
+        <header class="section__header">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">お問い合わせ</p>
+        </header>
+
+        <form class="contact-form" action="#" method="post">
+            <div class="grid grid--2">
+                <div class="form-group">
+                    <label class="form-label" for="contact-name">Name <span style="color: var(--color-danger);">*</span></label>
+                    <input type="text" id="contact-name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contact-email">Email <span style="color: var(--color-danger);">*</span></label>
+                    <input type="email" id="contact-email" name="email" class="form-input" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="contact-company">Company</label>
+                <input type="text" id="contact-company" name="company" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="contact-subject">Subject <span style="color: var(--color-danger);">*</span></label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="contact-message">Message <span style="color: var(--color-danger);">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large btn--full">Send Message</button>
+        </form>
+
+        <p class="text-center mt-xl" style="color: var(--color-gray-500); font-size: var(--font-size-sm);">
+            ※ このフォームはデモです。実際の送信機能はありません。
+        </p>
+    </div>
+</section>
+
+</main><!-- #main-content -->
+
+<footer class="site-footer" id="site-footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__about">
+                <h4 class="footer__title">Developer Portfolio</h4>
+                <p>WordPress副業案件向けポートフォリオ。高品質なWordPressサイトを制作します。</p>
+            </div>
+
+            <div class="footer__widget">
+                <h4 class="footer__title">Services</h4>
+                <ul class="footer__links">
+                    <li><a href="#services">WordPress Theme</a></li>
+                    <li><a href="#services">LP Design</a></li>
+                    <li><a href="#services">Site Maintenance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__widget">
+                <h4 class="footer__title">Links</h4>
+                <ul class="footer__links">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__widget">
+                <h4 class="footer__title">Contact</h4>
+                <ul class="footer__links">
+                    <li><a href="#contact">お問い合わせ</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

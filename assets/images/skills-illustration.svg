@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background shapes -->
+  <circle cx="320" cy="60" r="40" fill="#e2e8f0" opacity="0.5"/>
+  <circle cx="80" cy="240" r="30" fill="#e2e8f0" opacity="0.5"/>
+
+  <!-- Monitor -->
+  <rect x="80" y="50" width="240" height="160" rx="8" fill="#1e293b"/>
+  <rect x="90" y="60" width="220" height="130" rx="4" fill="#0f172a"/>
+
+  <!-- Code lines -->
+  <rect x="105" y="80" width="60" height="8" rx="2" fill="#2563eb"/>
+  <rect x="175" y="80" width="40" height="8" rx="2" fill="#64748b"/>
+  <rect x="105" y="100" width="30" height="8" rx="2" fill="#f59e0b"/>
+  <rect x="145" y="100" width="80" height="8" rx="2" fill="#10b981"/>
+  <rect x="105" y="120" width="50" height="8" rx="2" fill="#64748b"/>
+  <rect x="165" y="120" width="70" height="8" rx="2" fill="#2563eb"/>
+  <rect x="105" y="140" width="40" height="8" rx="2" fill="#f59e0b"/>
+  <rect x="155" y="140" width="90" height="8" rx="2" fill="#64748b"/>
+  <rect x="105" y="160" width="55" height="8" rx="2" fill="#10b981"/>
+
+  <!-- Monitor stand -->
+  <rect x="175" y="210" width="50" height="15" rx="2" fill="#334155"/>
+  <rect x="155" y="225" width="90" height="10" rx="4" fill="#475569"/>
+
+  <!-- Floating elements -->
+  <g transform="translate(310, 100)">
+    <rect x="0" y="0" width="60" height="60" rx="8" fill="url(#grad1)"/>
+    <text x="30" y="38" font-family="sans-serif" font-size="24" fill="white" text-anchor="middle">WP</text>
+  </g>
+
+  <g transform="translate(20, 80)">
+    <circle cx="25" cy="25" r="25" fill="url(#grad2)"/>
+    <text x="25" y="33" font-family="sans-serif" font-size="20" fill="white" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- PHP icon -->
+  <g transform="translate(320, 180)">
+    <ellipse cx="30" cy="20" rx="30" ry="20" fill="#777BB3"/>
+    <text x="30" y="26" font-family="sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">PHP</text>
+  </g>
+
+  <!-- CSS icon -->
+  <g transform="translate(30, 170)">
+    <rect x="0" y="0" width="40" height="45" rx="4" fill="#264de4"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">CSS</text>
+  </g>
+</svg>
