@@ -553,6 +553,30 @@ ul {
   transform: scale(1.05);
 }
 
+.coming-soon-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(15, 23, 42, 0.75);
+  color: #fff;
+  font-family: var(--font-family-en);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 6px 14px;
+  border-radius: 100px;
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.work-card-coming-soon {
+  opacity: 0.85;
+}
+
+.work-card-coming-soon:hover {
+  opacity: 1;
+}
+
 .placeholder-thumbnail {
   background: linear-gradient(135deg, var(--color-primary-light) 0%, #c7d2fe 100%);
 }
@@ -713,8 +737,7 @@ ul {
 .skill-list li {
   font-size: 0.875rem;
   color: var(--color-text-light);
-  padding: 4px 0;
-  padding-left: 16px;
+  padding: 4px 0 4px 16px;
   position: relative;
 }
 
