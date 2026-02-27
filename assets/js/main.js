@@ -63,15 +63,15 @@
    * ======================================== */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
-      var targetId = this.getAttribute('href');
+      const targetId = this.getAttribute('href');
       if (targetId === '#') return;
 
-      var target = document.querySelector(targetId);
+      const target = document.querySelector(targetId);
       if (!target) return;
 
       e.preventDefault();
-      var headerHeight = header ? header.offsetHeight : 0;
-      var targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+      const headerHeight = header ? header.offsetHeight : 0;
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
 
       window.scrollTo({
         top: targetPosition,
@@ -83,19 +83,18 @@
   /* ========================================
    * スクロールアニメーション（Intersection Observer）
    * ======================================== */
-  var animateElements = document.querySelectorAll('[data-animate]');
+  const animateElements = document.querySelectorAll('[data-animate]');
 
   if ('IntersectionObserver' in window && animateElements.length > 0) {
-    var observer = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            var el = entry.target;
-            var animationType = el.getAttribute('data-animate');
+            const el = entry.target;
+            const animationType = el.getAttribute('data-animate');
 
             if (animationType === 'fade-up-stagger') {
-              var children = el.children;
-              Array.prototype.forEach.call(children, function (child, index) {
+              Array.from(el.children).forEach(function (child, index) {
                 setTimeout(function () {
                   child.classList.add('is-visible');
                 }, index * 120);
@@ -121,13 +120,13 @@
   /* ========================================
    * 実績フィルター（archive-work.php用）
    * ======================================== */
-  var filterBtns = document.querySelectorAll('.filter-btn');
-  var workCards = document.querySelectorAll('.works-grid .work-card');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const workCards = document.querySelectorAll('.works-grid .work-card');
 
   if (filterBtns.length > 0 && workCards.length > 0) {
     filterBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var filter = this.getAttribute('data-filter');
+        const filter = this.getAttribute('data-filter');
 
         filterBtns.forEach(function (b) {
           b.classList.remove('active');
@@ -140,12 +139,8 @@
             return;
           }
 
-          var categories = card.getAttribute('data-categories') || '';
-          if (categories.indexOf(filter) !== -1) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
+          const categories = card.getAttribute('data-categories') || '';
+          card.style.display = categories.includes(filter) ? '' : 'none';
         });
       });
     });

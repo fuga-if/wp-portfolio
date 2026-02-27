@@ -11,7 +11,7 @@ $hero_description = get_theme_mod( 'fuga_hero_description', 'WordPressテーマ�
 $hero_image       = get_theme_mod( 'fuga_hero_image' );
 ?>
 
-<section class="hero" id="hero"<?php echo $hero_image ? ' style="background-image: url(' . esc_url( $hero_image ) . ')"' : ''; ?>>
+<section class="hero" id="hero"<?php echo $hero_image ? ' style="background-image: url(' . esc_url( $hero_image ) . ')"' : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- esc_url() applied to the only dynamic value inside the static style attribute string. ?>>
 	<div class="hero-overlay"></div>
 	<div class="container hero-inner">
 		<div class="hero-content" data-animate="fade-up">

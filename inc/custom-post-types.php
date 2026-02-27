@@ -136,12 +136,18 @@ function fuga_portfolio_save_work_meta( $post_id ) {
 		return;
 	}
 
-	$fields = array( 'work_site_url', 'work_github_url', 'work_tech_stack', 'work_role' );
+	$url_fields  = array( 'work_site_url', 'work_github_url' );
+	$text_fields = array( 'work_tech_stack', 'work_role' );
 
-	foreach ( $fields as $field ) {
+	foreach ( $url_fields as $field ) {
 		if ( isset( $_POST[ $field ] ) ) {
-			$value = sanitize_text_field( wp_unslash( $_POST[ $field ] ) );
-			update_post_meta( $post_id, '_' . $field, $value );
+			update_post_meta( $post_id, '_' . $field, esc_url_raw( wp_unslash( $_POST[ $field ] ) ) );
+		}
+	}
+
+	foreach ( $text_fields as $field ) {
+		if ( isset( $_POST[ $field ] ) ) {
+			update_post_meta( $post_id, '_' . $field, sanitize_text_field( wp_unslash( $_POST[ $field ] ) ) );
 		}
 	}
 }

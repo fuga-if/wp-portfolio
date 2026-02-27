@@ -34,7 +34,7 @@
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#contact" class="nav-cta">Contact</a></li>
 				</ul>
-			<?php else : ?>
+			<?php elseif ( has_nav_menu( 'primary' ) ) : ?>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'primary',
@@ -43,9 +43,10 @@
 					'fallback_cb'    => false,
 				) );
 				?>
-				<ul class="nav-menu nav-menu-fallback">
+			<?php else : ?>
+				<ul class="nav-menu">
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/works/' ) ); ?>">Works</a></li>
+					<li><a href="<?php echo esc_url( get_post_type_archive_link( 'work' ) ); ?>">Works</a></li>
 				</ul>
 			<?php endif; ?>
 		</nav>
